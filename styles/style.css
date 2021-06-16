@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    background-image: linear-gradient(rgba(20, 20, 20, .6) , rgba(20, 20, 20, .6)) , url(../img/los_angeles_city_night_street_skyscrapers_28498_1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 1rem;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body {
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 2.5em;
+}
+p#description {
+    text-align: center;
+    color: #fff;
+    font-size: .83em;
+    margin-bottom: 30px;
+    font-family: "Montserrat" , sans-serif;
+}
+main {
+    padding: 0 10px;
+}
+div#container {
+    max-width: 700px;
+    background-color: rgba(29, 31, 18, .9);
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    padding: 40px 50px;
+    color: #eee;
+    margin-bottom: 10px;
+}
+div.form-group {
+    margin: 10px 0 30px 0;
+}
+input[type="text"] , 
+input[type="email"] , 
+input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: .85em;
+}
+div.form-group label.label {
+    margin-bottom: 8px;
+    display: block;
+}
+label.other {
+    margin-top: 15px;
+}
+div.form-group p {
+    margin-bottom: 8px;
+}
+select#dropdown {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: .85em;
+    padding: 8px;
+}
+div.form-group label.recomm {
+    display: block;
+    margin-bottom: 7px;
+}
+div.subm-btn {
+    display: inline-block;
+}
+input#submit {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #37af65;
+    font-size: 1.1em;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+input#submit:hover {
+    
+    background-color: hsl(143, 52%, 39%);
+}
+label.other span {
+    font-size: .7em;
+}
+textarea {
+    min-height: 100px;
+    width: 100%;
+    resize: vertical;
+    font-size: 1em;
+    padding: 6px;
+}

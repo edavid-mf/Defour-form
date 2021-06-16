@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We want to provide the most satisfactory sensation for your travel">
+    <link rel="stylesheet" href="styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <title>DF Survey Form</title>
+</head>
+<body>
+	<header id="site-header">
+		<div class="header">
+		 <h1 id="title">Defour Survey Form</h1>
+		 <p id="description">Because we want you to have the best flight of your life.</p>
+		 </div>
+	</header>
+    <main>
+        <div id="container">
+            <div id="content">
+                <div>
+                    <form id="survey-form">
+                        <div class="form-group">
+                            <label for="name" id="name-label" class="label">
+                                Name
+							</label>  
+                                <input required placeholder="Enter your name" type="text" name="name" id="name">
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail" id="email-label" class="label">
+                                Email
+							</label>
+                                <input required placeholder="name@example.com" type="email" name="email" id="email">
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label id="number-label" for="age" class="label">
+                                Age
+							</label>
+                                <input required placeholder="Enter your current age" type="number" name="subject-age" min="16" max="90" id="age">
+                        </div>
+
+                        <div class="form-group">
+                            <p class="mct">Most common travel reasons</p>
+                            <select name="travel-reason" id="dropdown" required>
+                                <option selected="" disabled="" value="">Select your usual travel reason</option>
+                                <option value="business">Business</option>
+                                <option value="vacations">Vacations</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+						<div class="form-group checks">
+							<p class="recomm">Would you recommend Defour?</p>
+							<label class="recomm" for="rec-yes">
+								<input type="radio" name="recomm" value="yes" id="rec-yes">Yes
+							</label>
+
+							<label class="recomm" for="rec-yes-ag">
+								<input type="radio" name="recomm" value="yes-again" id="rec-yes-ag">Definitely yes
+							</label>
+
+							<label class="recomm" for="rec-yes-def">
+								<input type="radio" name="recomm" value="def-yes" id="rec-yes-def">First option
+							</label>
+						</div>
+
+						<div class="form-group">
+							<p>What do you consider we have to improve?</p>
+							<label class="label" for="prices">
+								<input type="checkbox" name="improve" value="price" id="price">Tickets price
+							</label>
+
+							<label class="label" for="russia">
+								<input type="checkbox" name="improve" value="food" id="russia">Food
+							</label>
+
+							<label class="label" for="seatings">
+								<input type="checkbox" name="improve" value="seatings" id="seatings">Seatings
+							</label>
+
+							<label class="label" for="movies">
+								<input type="checkbox" name="improve" value="movies" id="movies">Movies catalog
+							</label>
+
+							<label class="label" for="bath">
+								<input type="checkbox" name="improve" value="bath" id="bath">Bathroom smell
+							</label>
+							
+							<label class="label other" for="other">
+								<input type="checkbox" name="improve" value="other" id="other">Other <span>(specify)</span>
+							</label>
+							<textarea name="improve" placeholder="Leave your suggestion here..." id="other"></textarea>
+						</div>
+
+						<div id="subm-btn">
+					<input type="submit" id="submit" value="Send us your feedback">        
+						</div>
+                    </form>
+                </div>
+            </div>       
+        </div>
+    </main>
+    
+</body>
+</html>
